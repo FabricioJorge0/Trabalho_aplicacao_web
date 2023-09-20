@@ -1,0 +1,182 @@
+
+/*Estilizando o html por completo*/
+html {
+    /*Utilizando uma ideia de font-size de 62.5% onde eu posso utilizar o atributo rem como tamanho, onde 1 rem = 10px. Ajuda um bloco se ajeitar dependendo do tamanho da tela*/
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/*Estilizando um body por completo*/
+body{
+    font-size: 1.9rem;
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+    padding-top: 95px ;
+}
+
+/*Definindo largura e altura do nav*/
+nav{
+    width: 100%;
+    height: auto;
+    
+}
+
+/*Estilizando o cabeçalho com altura, largura, cor de fundo, cor das letras, margem e posição do elemento*/
+.cabecalho{
+    width: 100%;
+    height: auto;
+    background-color: #363636;
+    color: white;
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+/*Estilizando o meu nome dentro do cabeçalho*/
+.meuNome{
+    width: 20rem;
+    margin: 0;
+    margin-top: 1.3rem;
+    margin-left: 5rem;
+    color: bisque;
+    float: left;
+    font-weight: 800;
+}
+
+/* Fazendo toda a lista flutuar a direita*/
+.listaMenu{
+    float: right;
+}
+
+/*Estilizando os "li" da lista para deixar alinhado lado a lado e margens e estilo da lista*/
+.listaMenu li {
+    display: inline-block;
+    margin-right: 2rem;
+    list-style: none;
+}
+
+/*Estilizando as tag a dentro das listas*/
+.listaMenu li a{
+    text-decoration: none;
+    padding: 1rem 1rem;
+    color: #fff;
+    font-size: 2rem;
+    font-weight:700;
+    border-radius: 8px;
+}
+#sobreMim{
+    background-color: #494848;
+}
+
+
+/* adicionando um hover à tag a, quando eu passar o mouse por cima de cada tag a, ira mudar a cor do elemento*/ 
+.listaMenu li a:hover{
+    color: rgb(41, 182, 182);
+}
+
+/*Estilizando o classe eu, que se refere ao texto "Sobre mim"*/
+.eu{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    color: #444;
+    margin-top: 50px;
+    text-decoration: underline;
+}
+
+/*Estilizando o corpo principal da página*/
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Estilizando a div que emgloba 3 outras divs, deixando-as centralizadas e uma ao lado da outra*/
+.meuEu{
+    width: 100%;
+    height: auto;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+
+ 
+}
+
+/*Estilizando os cards contendo Quem sou eu, hobbies e experiências profissionais*/
+.minhasCoisas{
+    border: 1px solid rgb(214, 208, 208);
+    box-shadow: 2px 2px 10px;
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    background-color:rgb(192, 188, 188) ;
+}
+
+/*Estilizando os 3 subtítulos ao mesmo tempo*/
+.minhasCoisas h3{
+    font-size: 2.5rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+/*Estilizando todos os paragráfos dos 3 cards*/
+.minhasCoisas p{
+    text-align: justify;
+    margin-left: 15px ;
+    margin-right: 15px;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif ;
+    color: rgb(68, 66, 66);
+}
+
+/*Estilizando imagem dentro dos cards, todas terão uma só estilização*/
+.img{
+    width: 30%;
+    border-radius: 50%;
+    float: right;
+    box-shadow: 2px 2px 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border: 1px solid black;
+    clear: right ;
+    
+}
+
+/*deixando uma margin entre o tema jogo e subtítulo*/
+.jogo{
+    margin-top: 50px;
+}
+
+/*deixando uma margem entre os dois elementos dos hobbies*/
+.shopping{
+    margin-top: 100px;
+}
+
+.exp1{
+    margin-bottom: 40px;
+}
+
+.exp2 .exp3{
+    margin-top: 10px;
+}
+
+.formacao h1{
+    font-size: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
