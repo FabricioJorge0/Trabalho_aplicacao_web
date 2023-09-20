@@ -78,18 +78,18 @@ nav{
 
 /* adicionando um hover à tag a, quando eu passar o mouse por cima de cada tag a, ira mudar a cor do elemento*/ 
 .listaMenu li a:hover{
-    color: rgb(41, 182, 182);
+    color: rgb(0, 190, 248);
 }
 
 /*Estilizando o classe eu, que se refere ao texto "Sobre mim"*/
 .titulo{
     margin: 0 auto;
-    font-family:'Times New Roman', Times, serif;
+    font-family:serif;
     text-align: center;
-    color: #999494;
+    color: rgb(0, 190, 248);
     margin-top: 50px;
-    text-decoration: underline;
-    font-size: 3rem;
+
+    font-size: 4.5rem;
 }
 
 /*Estilizando o corpo principal da página*/
@@ -107,7 +107,7 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 80px;
 
  
 }
@@ -209,6 +209,7 @@ nav{
     clear: right;
 }
 
+/*Estilizando a sessão por completo de Portfólio*/
 .portfolio{
     width: 100%;
     height: auto;
@@ -221,23 +222,27 @@ nav{
     clear: left;
 }
 
-.portfolio h1{
-    clear: right;
-}
 
 .cardPortfolio{
     border-radius: 10px;
     box-shadow: 5px 5px 50px 10px rgb(7, 7, 7);
     width: auto;
+    height: auto;
     margin: 10px;
     text-align: center;
     background-color:rgb(27, 27, 27);
-    clear: right;
+
 }
 
 .imgPorjetos{
     width: 100%;
-    clear: left;
+    margin-bottom: 30px;
+}
+
+.cardSite a{
+    text-decoration: none;
+    color: rgb(0, 190, 248);
+    margin-right: 60px;
 }
 
 
