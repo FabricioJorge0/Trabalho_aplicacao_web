@@ -1,6 +1,6 @@
 
 /*Estilizando o html por completo*/
-html {
+:root {
     /*Utilizando uma ideia de font-size de 62.5% onde eu posso utilizar o atributo rem como tamanho, onde 1 rem = 10px. Ajuda um bloco se ajeitar dependendo do tamanho da tela*/
     font-size: 62.5%;
     margin: 0;
@@ -15,6 +15,8 @@ body{
     padding: 0;
     font-family:'Times New Roman', Times, serif;
     padding-top: 95px ;
+    background-color:rgb(27, 27, 27);
+    color: white;
 }
 
 /*Definindo largura e altura do nav*/
@@ -28,7 +30,7 @@ nav{
 .cabecalho{
     width: 100%;
     height: auto;
-    background-color: #363636;
+    background-color: rgb(7, 7, 7);
     color: white;
     margin-top: 0;
     position: fixed;
@@ -68,6 +70,7 @@ nav{
     font-weight:700;
     border-radius: 8px;
 }
+
 #sobreMim{
     background-color: #494848;
 }
@@ -79,12 +82,14 @@ nav{
 }
 
 /*Estilizando o classe eu, que se refere ao texto "Sobre mim"*/
-.eu{
+.titulo{
+    margin: 0 auto;
     font-family:'Times New Roman', Times, serif;
     text-align: center;
-    color: #444;
+    color: #999494;
     margin-top: 50px;
     text-decoration: underline;
+    font-size: 3rem;
 }
 
 /*Estilizando o corpo principal da página*/
@@ -94,7 +99,7 @@ nav{
 }
 
 /*Estilizando a div que emgloba 3 outras divs, deixando-as centralizadas e uma ao lado da outra*/
-.meuEu{
+.cards{
     width: 100%;
     height: auto;
     font-family: 'Times New Roman', Times, serif;
@@ -102,18 +107,20 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
+    margin-top: 30px;
 
  
 }
 
 /*Estilizando os cards contendo Quem sou eu, hobbies e experiências profissionais*/
 .minhasCoisas{
-    border: 1px solid rgb(214, 208, 208);
-    box-shadow: 2px 2px 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 50px 10px rgb(7, 7, 7);
     width: 100%;
     margin: 10px;
     text-align: center;
-    background-color:rgb(192, 188, 188) ;
+    background-color:rgb(27, 27, 27);
+    clear: left;
 }
 
 /*Estilizando os 3 subtítulos ao mesmo tempo*/
@@ -131,7 +138,7 @@ nav{
     margin-right: 15px;
     font-size: 20px;
     font-family:Arial, Helvetica, sans-serif ;
-    color: rgb(68, 66, 66);
+    color: white;
 }
 
 /*Estilizando imagem dentro dos cards, todas terão uma só estilização*/
@@ -139,7 +146,7 @@ nav{
     width: 30%;
     border-radius: 50%;
     float: right;
-    box-shadow: 2px 2px 10px;
+    box-shadow: 5px 5px 50px 10px rgb(7, 7, 7);
     margin-right: 15px;
     margin-left: 15px;
     border: 1px solid black;
@@ -157,17 +164,86 @@ nav{
     margin-top: 100px;
 }
 
+/* adicionando uma margem entre os elementos dentro do card experiências profissionais*/
 .exp1{
     margin-bottom: 40px;
 }
 
+/* adicionando uma margem entre os elementos dentro do card experiências profissionais*/
 .exp2 .exp3{
     margin-top: 10px;
 }
 
-.formacao h1{
-    font-size: 4rem;
+
+/* ajustando margem abaixo para separar as duas sessões*/
+.formacao{
+    margin-bottom: 100px;
 }
+/*ajustando tamanho e margin top da div formação*/
+.curso{
+    width: 100%;
+    margin-top: 60px;
+
+}
+
+.curso p{
+    text-align: justify;
+    margin-left: 40px ;
+    margin-right: 40px;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif ;
+    color: white;
+}
+
+
+
+/*Estilizando a imagem do tema "Formação*/
+.imgCurso{
+    width: 25%;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 5px 5px 50px 10px rgb(7, 7, 7);
+    border: 1px solid black;
+    float: left;
+    margin: 15px;
+    clear: right;
+}
+
+.portfolio{
+    width: 100%;
+    height: auto;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 30px;
+    clear: left;
+}
+
+.portfolio h1{
+    clear: right;
+}
+
+.cardPortfolio{
+    border-radius: 10px;
+    box-shadow: 5px 5px 50px 10px rgb(7, 7, 7);
+    width: auto;
+    margin: 10px;
+    text-align: center;
+    background-color:rgb(27, 27, 27);
+    clear: right;
+}
+
+.imgPorjetos{
+    width: 100%;
+    clear: left;
+}
+
+
+
+
+
 
 
 

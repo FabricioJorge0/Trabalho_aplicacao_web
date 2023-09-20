@@ -14,12 +14,12 @@ window.addEventListener("scroll", function(){
     
     if(this.window.scrollY <= 635){
         sobreMim.style.backgroundColor = "#494848"
-        formacao.style.backgroundColor = "#353535"
+        formacao.style.backgroundColor = "rgb(7, 7, 7)"
     }
     else if(this.window.scrollY >= 636){
-        sobreMim.style.backgroundColor = "#353535"
+        sobreMim.style.backgroundColor = "rgb(7, 7, 7)"
         formacao.style.backgroundColor = "#494848"
     }
 })
 
-alert(window.scrollY)
+// alert(window.scrollY)
