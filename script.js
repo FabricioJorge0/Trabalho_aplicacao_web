@@ -13,25 +13,35 @@ window.addEventListener("scroll", function(){
     /*nessas sequências de ifs, estou criando as animação de acordo com o total de scroll que a tela der.
     até o momento eu não sei fazer o scroll pelos ids de cada local, como o "sobre mim", "formação" etc
     então, se for usada em uma tela pequena menor que 1360px essa animação pode apresentar falhas e acontecer antes do esperado */
-    
+
+
+    /* Se o scroll for menor de 635, então, no cabeçalho, mude a cor do "Sobre mim" para #494848 e o restante para rgb(7, 7, 7)  */
     if(this.window.scrollY <= 635){
         sobreMim.style.backgroundColor = "#494848"
         formacao.style.backgroundColor = "rgb(7, 7, 7)"
         portfolio.style.backgroundColor = "rgb(7, 7, 7)"
         contato.style.backgroundColor = "rgb(7, 7, 7)"
     }
+
+    /* Se não, se o scroll for maior que 636 e menor que 1199, então, no cabeçalho, mude a cor de "Formação" para #494848 e o restante para rgb(7, 7, 7)   */
     else if(this.window.scrollY >= 636 && this.window.scrollY <= 1199){
         sobreMim.style.backgroundColor = "rgb(7, 7, 7)"
         formacao.style.backgroundColor = "#494848"
         portfolio.style.backgroundColor = "rgb(7, 7, 7)"
         contato.style.backgroundColor = "rgb(7, 7, 7)"
     }
+
+    
+    /* Se não, se o scroll for maior que 636 e menor que 1199, então, no cabeçalho, mude a cor de "Portfólio" para #494848 e o restante para rgb(7, 7, 7)   */
     else if(this.window.scrollY >= 1200 && this.window.scrollY <= 1849){
         sobreMim.style.backgroundColor = "rgb(7, 7, 7)"
         formacao.style.backgroundColor = "rgb(7, 7, 7)"
         portfolio.style.backgroundColor = "#494848"
         contato.style.backgroundColor = "rgb(7, 7, 7)"
     }
+
+    
+    /* Se não, se o scroll for maior que 636 e menor que 1199, então, no cabeçalho, mude a cor de "Contato" para #494848 e o restante para rgb(7, 7, 7)   */
     else if(this.window.scrollY >= 1850){
         sobreMim.style.backgroundColor = "rgb(7, 7, 7)"
         formacao.style.backgroundColor = "rgb(7, 7, 7)"
@@ -40,4 +50,4 @@ window.addEventListener("scroll", function(){
     }
 })
 
-console.log(this.window.scrollY)
+
