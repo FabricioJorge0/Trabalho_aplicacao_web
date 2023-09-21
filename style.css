@@ -31,7 +31,7 @@ nav{
     width: 100%;
     height: auto;
     background-color: rgb(7, 7, 7);
-    color: white;
+    color: rgb(0, 190, 248);
     margin-top: 0;
     position: fixed;
     top: 0;
@@ -44,7 +44,6 @@ nav{
     margin: 0;
     margin-top: 1.3rem;
     margin-left: 5rem;
-    color: bisque;
     float: left;
     font-weight: 800;
 }
@@ -71,6 +70,7 @@ nav{
     border-radius: 8px;
 }
 
+/* Definindo background inicial para o item "Sobre mim no cabeçalho*/
 #sobreMim{
     background-color: #494848;
 }
@@ -126,9 +126,9 @@ nav{
 /*Estilizando os 3 subtítulos ao mesmo tempo*/
 .minhasCoisas h3{
     font-size: 2.5rem;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:serif;
     font-weight: 800;
-    text-decoration: underline;
+    color: rgb(0, 190, 248);
 }
 
 /*Estilizando todos os paragráfos dos 3 cards*/
@@ -141,7 +141,7 @@ nav{
     color: white;
 }
 
-/*Estilizando imagem dentro dos cards, todas terão uma só estilização*/
+/*Estilizando imagem dentro dos cards, todas terão uma só estilização cards referentes ao tema "sobre mim"*/
 .img{
     width: 30%;
     border-radius: 50%;
@@ -175,7 +175,7 @@ nav{
 }
 
 
-/* ajustando margem abaixo para separar as duas sessões*/
+/* ajustando margem abaixo para separar as formação e portfolio*/
 .formacao{
     margin-bottom: 100px;
 }
@@ -186,6 +186,7 @@ nav{
 
 }
 
+/*Estilizando paragráfo referente sobre o meu curso em "Formação"*/
 .curso p{
     text-align: justify;
     margin-left: 40px ;
@@ -223,6 +224,7 @@ nav{
 }
 
 
+/* Estilizando os cards referente ao portfolio como um todo*/
 .cardPortfolio{
     border-radius: 10px;
     box-shadow: 5px 5px 50px 10px rgb(7, 7, 7);
@@ -234,16 +236,128 @@ nav{
 
 }
 
+/* Estilizando as imagem referente ao portfolio*/
 .imgPorjetos{
-    width: 100%;
+    width: 80%;
     margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 50px 10px rgb(7, 7, 7);
+    border: 1px solid black;
 }
 
+/* dando uma margem a esqueda para centralizar melhor a imagem*/
+.cardSite{
+    margin-left: 20px;
+}
+
+/* Estilizando os links referente a cada projeto de cada imagem do portfolio*/
 .cardSite a{
     text-decoration: none;
     color: rgb(0, 190, 248);
     margin-right: 60px;
 }
+
+.footer{
+    margin-top: 10rem;
+}
+
+/* Estiliando o formulário por completo, de forma global*/
+.formulario{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+/* alterando o tamanho padrão do form*/
+.formulario form{
+    width: 40%;
+}
+
+/* Estilizando a tag label de forma geral, assim todas as label tetão a mesma estilização*/
+.formulario label{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(0, 190, 248);
+}
+
+/* Definindo o tamanho e margin de cada input*/
+.areaEntrada{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+/*Estilizando os inputs, como os dois possuem a mesma classe, então os dois inputs, terão a mesma estilização*/
+.entrada{
+    margin: 0 auto;
+    height: 3rem;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: rgb(46, 45, 45);
+    color: white;
+}
+
+/* adicionando animação, onde quando o input estiver em foco, ira alterar a cor da sua borda*/
+.entrada:focus{
+        outline: none;
+        border: 1px solid rgb(0, 190, 248);
+}
+
+/* Alterando o tamanho e margin da tag select de forma geral*/
+.areaSelecao{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+/* Estilizando a tag  Select*/
+.selecione{
+    margin: 0 auto;
+    height: 3rem;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: rgb(46, 45, 45);
+    color: white;
+    margin-bottom: 3rem;
+}
+
+/* Alterando tamanho e margin da tag textarea*/
+.areaMensagem{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+/* Estilizando o textarea */
+.areaMensagem textarea{
+    width: 100%;
+    background-color: rgb(46, 45, 45);
+    border: none;
+    color: white;
+}
+
+/* adicionando animação, onde quando o textarea estiver em foco, ira alterar a cor da sua borda*/
+.areaMensagem textarea:focus{
+    outline: none;
+    border: 1px solid rgb(0, 190, 248);
+}
+
+.btn{
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 190, 248) ;
+    border: none;
+    font-size: 16px;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
 
 
 
