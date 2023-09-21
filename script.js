@@ -2,7 +2,9 @@
 
 var sobreMim = document.getElementById("sobreMim")
 var formacao = document.getElementById("formacao")
-var chegar = document.getElementById("footer")
+var portfolio = document.getElementById("meuPortfolio")
+var contato = document.getElementById("meuContato")
+
 
 
 // aqui eu estou carregando a tela(window) e adicionando um evento para acontecer na tela quando houver o scroll da tela
@@ -15,11 +17,27 @@ window.addEventListener("scroll", function(){
     if(this.window.scrollY <= 635){
         sobreMim.style.backgroundColor = "#494848"
         formacao.style.backgroundColor = "rgb(7, 7, 7)"
+        portfolio.style.backgroundColor = "rgb(7, 7, 7)"
+        contato.style.backgroundColor = "rgb(7, 7, 7)"
     }
-    else if(this.window.scrollY >= 636){
+    else if(this.window.scrollY >= 636 && this.window.scrollY <= 1199){
         sobreMim.style.backgroundColor = "rgb(7, 7, 7)"
         formacao.style.backgroundColor = "#494848"
+        portfolio.style.backgroundColor = "rgb(7, 7, 7)"
+        contato.style.backgroundColor = "rgb(7, 7, 7)"
+    }
+    else if(this.window.scrollY >= 1200 && this.window.scrollY <= 1849){
+        sobreMim.style.backgroundColor = "rgb(7, 7, 7)"
+        formacao.style.backgroundColor = "rgb(7, 7, 7)"
+        portfolio.style.backgroundColor = "#494848"
+        contato.style.backgroundColor = "rgb(7, 7, 7)"
+    }
+    else if(this.window.scrollY >= 1850){
+        sobreMim.style.backgroundColor = "rgb(7, 7, 7)"
+        formacao.style.backgroundColor = "rgb(7, 7, 7)"
+        portfolio.style.backgroundColor = "rgb(7, 7, 7)"
+        contato.style.backgroundColor = "#494848"
     }
 })
 
-// alert(window.scrollY)
+console.log(this.window.scrollY)

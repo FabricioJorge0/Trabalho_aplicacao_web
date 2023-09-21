@@ -40,12 +40,14 @@ nav{
 
 /*Estilizando o meu nome dentro do cabeçalho*/
 .meuNome{
+    color: rgb(0, 190, 248);
     width: 20rem;
     margin: 0;
-    margin-top: 1.3rem;
+    margin-top: 1rem;
     margin-left: 5rem;
     float: left;
     font-weight: 800;
+    text-decoration: none;
 }
 
 /* Fazendo toda a lista flutuar a direita*/
@@ -58,6 +60,7 @@ nav{
     display: inline-block;
     margin-right: 2rem;
     list-style: none;
+    margin-top: 20px;
 }
 
 /*Estilizando as tag a dentro das listas*/
@@ -219,7 +222,7 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 60px;
     clear: left;
 }
 
@@ -254,7 +257,9 @@ nav{
 .cardSite a{
     text-decoration: none;
     color: rgb(0, 190, 248);
-    margin-right: 60px;
+    margin: 0 auto;
+    margin-right: 30px;
+    margin-left : 30px;
 }
 
 .footer{
