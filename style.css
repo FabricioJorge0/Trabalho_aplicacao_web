@@ -351,6 +351,8 @@ nav{
     border: 1px solid rgb(0, 190, 248);
 }
 
+
+/*Estilizando o botão*/
 .btn{
     margin-top: 4rem;
     margin-bottom: 10rem;
@@ -361,6 +363,13 @@ nav{
     font-size: 16px;
     padding: 1rem;
     border-radius: 8px;
+}
+
+
+/* adicionando efeito hover ao botão*/
+.btn:hover{
+    background-color:  rgb(0, 135, 177) ;
+    cursor: pointer;
 }
 
 
