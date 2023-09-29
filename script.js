@@ -7,6 +7,7 @@ var contato = document.getElementById("meuContato")
 
 
 
+
 // aqui eu estou carregando a tela(window) e adicionando um evento para acontecer na tela quando houver o scroll da tela
 window.addEventListener("scroll", function(){
     
@@ -50,4 +51,23 @@ window.addEventListener("scroll", function(){
     }
 })
 
+/* Criando função para quando o botao for clicado e ser enviado a mensagem.
+No entanto feito adicionado uma estrutura de decisão onde se os campos estirem vazios, será dado um alert pedindo para
+preencher os campos em branco, se não irá dar um alert de sucesso (Eu queria fazer com que a tela não recarregasse
+após clicar em OK no alert, mas eu não consegui.)
 
+OBS: Os dados inseridos não serão enviados para lugar algum*/
+function enviar(e){
+    var name = document.getElementById("name")
+    var email = document.getElementById("email")
+    var selecione = document.getElementById("selecione")
+
+    if(name.value == "" ||email.value == "" || selecione.value == ""){
+        alert("Por gentileza para enviar os dados de contato preencha todos os campos.")
+        e.preventDefault()
+    }
+    else{
+        alert("Mensagem enviada com sucesso!")
+    }
+    
+}

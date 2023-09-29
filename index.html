@@ -181,7 +181,7 @@
 
             <!--usando a tag form para criar formulário, como não ira enviar nada pra nenhum lugar, o atributo
             action permanecerá vazio.-->
-            <form action="">
+            <form>
 
                 <!-- Criando div para englobar toda a parte do input e label para melhor estilização-->
                 <div class="areaEntrada">
@@ -192,17 +192,17 @@
                 <!-- Criando div para englobar toda a parte do input e label para melhor estilização-->
                 <div class="areaEntrada">
                     <label for="email">Email</label>
-                    <input type="email" id="name" class="entrada" placeholder="Digite seu Email">
+                    <input type="email" id="email" class="entrada" placeholder="Digite seu Email">
                 </div>
 
                 <!-- Criando div para englobar toda a parte do input e label para melhor estilização-->
                 <div class="areaSelecao">
-                    <label for="">Selecione</label>
+                    <label for="selecione">Selecione</label>
 
                     <!-- Criando um tag select onde será possível selecionar entre as opções descritas nas tags option-->
                     <select class="selecione" name="selecione" id="selecione">
                         <option selected disabled value="">Selecione</option>
-                        <option value="">Serviços</option>
+                        <option value="0">Serviços</option>
                         <option value="1">Contratos</option>
                         <option value="2">Orçamentos</option>
                         <option value="3">Outros</option>
@@ -215,7 +215,8 @@
                     <textarea name="areaTexto" id="areaTexto" cols="40" rows="20"></textarea>
                 </div>
 
-                <button class="btn">Enviar</button>
+                <!-- criando um botão e também uma função onclick para enviar-->
+                <button onclick="enviar()" class="btn" type="submit" >Enviar</button>
             </form>
         </div>
     </footer>
