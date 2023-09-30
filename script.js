@@ -1,4 +1,4 @@
-// todas essas variaveis estão armazenando os ID criados no cabeçalho do site para fazer a animção
+// todas essas variáveis estão armazenando os ID criados no cabeçalho do site para fazer a animação
 
 var sobreMim = document.getElementById("sobreMim")
 var formacao = document.getElementById("formacao")
@@ -11,7 +11,7 @@ var contato = document.getElementById("meuContato")
 // aqui eu estou carregando a tela(window) e adicionando um evento para acontecer na tela quando houver o scroll da tela
 window.addEventListener("scroll", function(){
     
-    /*nessas sequências de ifs, estou criando as animação de acordo com o total de scroll que a tela der.
+    /*nessas sequências de ifs, estou criando as animações de acordo com o total de scroll que a tela der.
     até o momento eu não sei fazer o scroll pelos ids de cada local, como o "sobre mim", "formação" etc
     então, se for usada em uma tela pequena menor que 1360px essa animação pode apresentar falhas e acontecer antes do esperado */
 
