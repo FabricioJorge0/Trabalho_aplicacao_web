@@ -13,8 +13,8 @@
     <header class="cabecalho">
 
         <!-- Itens de navagação do cabeçalho-->
-        <nav>
-            <a href="#"  class="meuNome"><h2> Fabricio Jorge</h2></a>
+        <a href="#"  class="meuNome"><h2> Fabricio Jorge</h2></a>
+        <nav class="navegação">
         
             <!-- Criação de lista para movimentação na página-->
             <ul class="listaMenu">
@@ -27,13 +27,31 @@
             </ul>
 
         </nav>
+
+        <button class="btnModal" id="btnModal"><img src="./img/barra-de-menu.png" alt="" style="width:20px"></button>
+        
     </header>
 
     <!-- Dentro da tag main, esta sendo criado o conteúdo principal-->
     <main class="container"  id="sobre">
+        <div class="modal">
+            <nav class="navModal">
+            
+                <!-- Criação de lista para movimentação na página-->
+                <ul class="listaMenu">
+                        
+                    <li> <a  id="sobreMim" href="#">Sobre mim</a> </li>
+                    <li> <a  id="formacao" href="#minhaFormacao">Formação</a> </li>
+                    <li> <a id="meuPortfolio" href="#portfolio">Portfolio</a> </li>
+                    <li> <a id="meuContato" href="#contato">Contato</a> </li>
+            
+                </ul>
+            
+            </nav>
+        </div>
 
             <!-- tag adicionando o título principal desta sessão-->
-            <h1 class="titulo">Sobre mim</h1>
+            <h1 class="titulo titulo1">Sobre mim</h1>
             <!-- Criação de uma sessão para falar Sobre mim-->
             <section class="cards">
 
@@ -219,6 +237,7 @@
             </form>
         </div>
     </footer>
+
 
     <!-- link para o JS, coloquei no fundo por questão de carregamento. Como o HTML sempre será carregado de cima para 
     baixo, é mais recomendado colocar o js por último, pois assim, acelera o carragemento do HTML por completo-->

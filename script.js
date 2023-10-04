@@ -71,3 +71,32 @@ function enviar(e){
     }
     
 }
+
+const meuModal = () => {
+    var fotos = ["./img/png-clipart-x-button-others-angle-text.png", "./img/barra-de-menu.png"]
+    const modal = document.querySelector('.modal')
+    const botao = document.querySelector('.btnModal')
+    const modalAtual = modal.style.display
+    if(modalAtual == 'block'){
+        modal.style.display = 'none'
+        botao.firstElementChild.src = fotos[1]
+  
+    }else{
+        modal.style.display = 'block'
+        botao.firstElementChild.src = fotos[0]
+
+    }
+
+}
+
+
+const btn = document.querySelector(".btnModal")
+btn.addEventListener('click', meuModal)
+
+window.onclick = function(event){
+    const modal = document.querySelector('.modal')
+    if(event.target == modal){
+        meuModal()
+    }
+}
+

@@ -378,6 +378,78 @@ p::first-letter{
     margin-left: 40px;
 }
 
+.navModal{
+    display: none;
+}
+
+
+
+
+
+.btnModal{
+    display: none;
+}
+
+.modal{
+    display: none;
+}
+
+@media (max-width: 790px){
+    .navegação{
+        display: none;
+    }
+
+    header{
+        height: 100px;
+    }
+    .btnModal{
+        display: flex;
+        float: right;
+        margin-right: 30px ;
+        margin-top: 35px;
+        border-radius: 5px;
+    }
+
+    .cards, .portfolio{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .areaEntrada input{
+        width: 100%;
+    }
+    .formulario form{
+        width: 80%;
+    }
+    .titulo1{
+        margin-left: 100px;
+    } 
+    .modal{
+        background-color: #aaa;
+        display: block;
+        position: fixed;
+        margin-left: 250px;
+        width: 183px;
+        border: 1px solid black;
+        height: 300px;
+        margin-top: 0;
+    }
+    .navModal{
+        display: block;
+        width: 200px;
+
+    }
+    .listaModal li{
+        list-style: none;
+        margin-top: 50px;
+    }
+
+    .listaModal li a {
+        text-decoration: none;
+        color: white;   
+    }
+
+}
 
 
 
