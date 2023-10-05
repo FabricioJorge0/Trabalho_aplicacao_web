@@ -451,6 +451,12 @@ p::first-letter{
 
 }
 
+@media (max-width: 500px){
+    .modal{
+        left: 58%;
+    }
+}
+
 
 
 
