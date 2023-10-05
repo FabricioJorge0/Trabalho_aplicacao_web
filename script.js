@@ -1,13 +1,13 @@
 // todas essas variáveis estão armazenando os ID criados no cabeçalho do site para fazer a animação
 
-var sobreMim = document.querySelector(".sobreMim")
+var sobreMim = document.getElementById("sobreMim")
 var sobreMimModal = document.getElementById("sobreMimModal")
-var formacao = document.querySelector(".formacao")
-var formacaoModal = document.getElementById(".formacaoModal")
-var portfolio = document.querySelector(".meuPortfolio")
-var portfolioModal = document.getElementById(".meuPortfolioModal")
-var contato = document.querySelector(".meuContato")
-var contatoModal = document.getElementById(".meuContatoModal")
+var formacao = document.getElementById("formacao")
+var formacaoModal = document.getElementById("formacaoModal")
+var portfolio = document.getElementById("meuPortfolio")
+var portfolioModal = document.getElementById("meuPortfolioModal")
+var contato = document.getElementById("meuContato")
+var contatoModal = document.getElementById("meuContatoModal")
 
 
 console.log(window.screen.width)
@@ -23,14 +23,14 @@ if(window.screen.width <= 1000){
         /* Se o scroll for menor de 635, então, no cabeçalho, mude a cor do "Sobre mim" para #494848 e o restante para rgb(7, 7, 7)  */
         if(this.window.scrollY <= 1000){
             sobreMimModal.style.backgroundColor = "#494848"
-            formacaoModal.style.backgroundColor = "yellow"
+            formacaoModal.style.backgroundColor = "rgb(7, 7, 7)"
             portfolioModal.style.backgroundColor = "rgb(7, 7, 7)"
             contatoModal.style.backgroundColor = "rgb(7, 7, 7)"
         }
     
         /* Se não, se o scroll for maior que 636 e menor que 1199, então, no cabeçalho, mude a cor de "Formação" para #494848 e o restante para rgb(7, 7, 7)   */
-        else if(this.window.scrollY >= 1001 && this.window.scrollY <= 1925){
-            sobreMimModal.style.backgroundColor = "blue"
+        else if(this.window.scrollY >= 1425 && this.window.scrollY <= 1925){
+            sobreMimModal.style.backgroundColor = "rgb(7, 7, 7)"
             formacaoModal.style.backgroundColor = "#494848"
             portfolioModal.style.backgroundColor = "rgb(7, 7, 7)"
             contatoModal.style.backgroundColor = "rgb(7, 7, 7)"
@@ -47,7 +47,7 @@ if(window.screen.width <= 1000){
     
         
         /* Se não, se o scroll for maior que 636 e menor que 1199, então, no cabeçalho, mude a cor de "Contato" para #494848 e o restante para rgb(7, 7, 7)   */
-        else if(this.window.scrollY >= 2125){
+        else if(this.window.scrollY >= 3600){
             sobreMimModal.style.backgroundColor = "rgb(7, 7, 7)"
             formacaoModal.style.backgroundColor = "rgb(7, 7, 7)"
             portfolioModal.style.backgroundColor = "rgb(7, 7, 7)"
@@ -55,7 +55,6 @@ if(window.screen.width <= 1000){
         }
     })
 }else{
-
     // aqui eu estou carregando a tela(window) e adicionando um evento para acontecer na tela quando houver o scroll da tela
     window.addEventListener("scroll", function(){
         
@@ -99,6 +98,7 @@ if(window.screen.width <= 1000){
         }
     })
 }
+
 
 
 

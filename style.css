@@ -425,7 +425,7 @@ p::first-letter{
     }
     .modal{
         position: fixed;
-        background-color: #aaa;
+        background-color: rgb(7, 7, 7);
         width: 183px;
         border: 1px solid black;
         height: 300px;
