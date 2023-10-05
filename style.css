@@ -124,6 +124,7 @@ nav{
     text-align: center;
     background-color:rgb(27, 27, 27);
     clear: left;
+    z-index: 0;
 }
 
 /*Estilizando os 3 subtítulos ao mesmo tempo*/
@@ -394,7 +395,8 @@ p::first-letter{
     display: none;
 }
 
-@media (max-width: 790px){
+
+@media (max-width: 1000px){
     .navegação{
         display: none;
     }
@@ -421,18 +423,16 @@ p::first-letter{
     .formulario form{
         width: 80%;
     }
-    .titulo1{
-        margin-left: 100px;
-    } 
     .modal{
-        background-color: #aaa;
-        display: block;
         position: fixed;
-        margin-left: 250px;
+        background-color: #aaa;
         width: 183px;
         border: 1px solid black;
         height: 300px;
         margin-top: 0;
+        float: right;
+        z-index: 100;
+        left: 75%;
     }
     .navModal{
         display: block;
