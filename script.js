@@ -132,6 +132,7 @@ const meuModal = () => {
     if(modalAtual == 'block'){
         modal.style.display = 'none'
         botao.firstElementChild.src = fotos[1]
+
   
     }else{
         modal.style.display = 'block'
